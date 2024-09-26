@@ -4,8 +4,8 @@ services:
     build: .
     ports:
       - "3000:3000"
-    environment:
-      - MONGODB_URI=mongodb://mongo:27017/lenovo_scraper
+    env_file:
+      - .env
     volumes:
       - ./src:/usr/src/app/src
     depends_on:
