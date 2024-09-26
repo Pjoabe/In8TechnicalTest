@@ -1,7 +1,7 @@
 # IN8-technical-test
 ---
 
-This is an API project developed to perform web scraping on Lenovo product data, utilizing a scheduler to execute the scraping periodically.
+This is an API project developed to perform web scraping on Lenovo products data, utilizing a scheduler to execute the scraping periodically.
 
 ---
 
