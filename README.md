@@ -63,7 +63,7 @@ This is an API project developed to perform web scraping on Lenovo products data
 
 ### POST /api/scrape
 
-**Description**: starts the scraping process. (The scraping process occurs automatically every hour.)
+**Description**: starts the scraping process. (The scraping process also occurs automatically every hour.)
 
 ### GET /api/products
 
