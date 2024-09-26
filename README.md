@@ -14,6 +14,8 @@ This is an API project developed to perform web scraping on Lenovo products data
 - **node-cron**: Library for scheduling tasks in Node.js.
 - **MongoDB**: NoSQL database used to store the extracted data.
 - **Cheerio**: Fast library for parsing and manipulating HTML and XML in Node.js.
+- **Axios**: Promise-based HTTP client for making requests to external APIs.
+- **Mongoose**: ODM (Object Data Modeling) library for MongoDB and Node.js, simplifying data manipulation and validation.
 
 ---
 
