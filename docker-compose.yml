@@ -1,23 +1,21 @@
 version: '3'
 services:
-  web:
+  app:
     build: .
     ports:
       - "3000:3000"
-    volumes:
-      - .:/usr/src/app    
-    depends_on:
-      - mongo    
     environment:
-      - MONGO_URI=mongodb://mongo:27017/mydatabase    
-    command: npm start  
-
+      - MONGODB_URI=mongodb://mongo:27017/lenovo_scraper
+    volumes:
+      - ./src:/usr/src/app/src
+    depends_on:
+      - mongo
   mongo:
-    image: mongo:latest
-    ports:      
-      - "27017:27017"   
-    volumes:    
-      - mongo-data:/data/db
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
 
 volumes:
-  mongo-data:
+  mongodb_data:
